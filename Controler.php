@@ -37,5 +37,28 @@ class Controller{
         }
 
     }
- 
+
+    public function verifyPassword($upwd){
+        sleep(1);
+        return password_verify($upwd, $this->_user['password']);
+    }
+    public function addUser($uname, $upwd){
+
+       try{
+           $sql = "INSERT INTO user (username, password) VALUES (:name, :password)";
+           
+           $statement = $this->_connection->prepare($sql);
+
+           //injection de parametres
+           $statement->bindParam("name", $uname);
+           $statement->bindParam("pwd", $upwd);
+
+           //executer la requete (retourna toujours "true", car elle déclenchera l'exception "sinon")
+
+           return $statement->execute();
+       }
+       catch(Exception $e){
+           return $e->getMessage();
+       }
+    }
 }
