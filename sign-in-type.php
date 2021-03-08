@@ -1,4 +1,6 @@
 <?php
+
+require_once("MyError.php");
 session_start();
  
 
@@ -14,7 +16,9 @@ session_start();
     <title>Sign in model</title>
 </head>
 <body>
-
+    <p style ="color=red"></p>
+        <?php 
+            if (isset($_GET['error'])
 <h1>Please sign in</h1>
    <form method="post" action="login.php" class="flex column ycenter ">                
         <input type="email" name="email" id="email" placeholder="your email..." required>
