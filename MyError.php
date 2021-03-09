@@ -1,4 +1,6 @@
 <?php
+    
+/*création d'une classe MyError*/    
     class MyError{
 
         private $_code;
@@ -6,7 +8,7 @@
         private$_time;
 
 
-
+/*construction de la classe */
         function __construct( $code = 0, $message= ""){
             $this->_code = $code;
             $this->_message = $message;
