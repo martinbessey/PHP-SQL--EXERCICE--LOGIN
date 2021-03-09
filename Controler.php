@@ -1,7 +1,8 @@
 <?php
 class Controller{
 
-
+    private $_connexion;
+    private $_user;
 
     public function __construct($connection){
         $this->_connection = $connection;
@@ -31,7 +32,6 @@ class Controller{
             return $this->_user;
         }
 
-    
         catch(Exception $e){
             return $e->getMessage();
         }
