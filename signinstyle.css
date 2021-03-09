@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  img,
+  .fullwidth {
+    width: 100%;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+  .ycenter {
+    align-items: center;
+  }
+  
+  .xcenter {
+    justify-content: center;
+  }
+  
+  .nomargin {
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 8vh;
+    padding-left: 2%;
+    padding-top: 2%;
+  }
+  
+  .sign-in{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23vw;
+    height: 8vh;
+    padding-right: 2%;
+    padding-top: 2%;
+    color:white;
+    font-size: 18px;
+  }
+  
+  .sign-in a {
+    color:white;
+  }
+  .sign-in a:hover {
+    color:#b08210;
+  }
+  
+  main {
+    background-image: url('./login-background.jpg');
+    background-color: #b08210;
+    background-blend-mode: multiply;
+    background-position-y: -100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+  }
+  
+  div {
+    text-align: center;
+    width: 60vh;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 15px;
+  }
+  
+  h2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom:45px;
+  }
+  
+  form {
+    justify-content: space-around;
+    width: 50%;
+    height: 250px;
+    padding-left: 50%;
+  }
+  #password,
+  #username {
+    background-color: black;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 12px 20px;
+    margin-bottom:35px;
+      color: #fafafa;
+  }
+  input[type="username"] {
+    margin-bottom: 10%;
+  }
+  input:focus,textarea:focus {
+    color: #fafafa;
+  }
+  input[type="submit"] {
+    background-color: rgb(14, 14, 14);
+    color: #fafafa;
+    font-size: 25px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin-top: 50%;
+    box-shadow: 10px 6px 6px black;
+  }
+  input[type="submit"]:hover,
+  input[type="submit"]:focus{
+    background-color: rgb(0, 0, 0);
+    color: #b08210;
+    border: solid 2px #b08210;
+  }
+  #password:hover ,
+  #username:hover {
+    border: solid 2px #b08210;
+  }
+  div small,div a {
+    font-size:1em;
+    padding-top: 2em;
+    color:#b08210;
+  }
+  footer {
+    height: 10vh;
+    color: #fafafa;
+    background-color: black;
+  }
+  
