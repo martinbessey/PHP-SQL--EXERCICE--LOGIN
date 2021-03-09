@@ -24,7 +24,7 @@ entrée par l'utilisateur dans l'input html "password"utilisant
 la méthode POST*/
 /*On défini le format désiré de la variable "pwd" en utilisant des FILTER*/
     $pwd =  filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
-/*création d'une variable "token" corespondant à une valeur string */
+/*création d'une variable "token"*/
 /*On défini le format désiré de la variable "name" en utilisant des FILTER*/
     $token = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
 

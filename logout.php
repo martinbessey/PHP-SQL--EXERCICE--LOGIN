@@ -2,7 +2,7 @@
 
  session_start();
 
- /*destruction des vaiables user et error*/
+ /*destruction des variables user et error*/
  unset($_SESSION['user']);
  unset($_SESSION['error']);
 
