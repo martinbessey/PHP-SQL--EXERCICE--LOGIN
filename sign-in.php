@@ -14,14 +14,14 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS//signinstyle.css" type="text/css">
-    <title>Inscription</title>
+    <title>Béhance sign-in</title>
 </head>
 
 <body class="nomargin">
     <main class="fullwidth flex ycenter xcenter">
-        <a href="#" class="logo"><img src="../IMG/logo blanc.png"></a>
-        <span class="sign-in">Already on BigBand? <a href="sign-in.php">Log in here</a></span>
-        <p style="color=red">
+        <a href="#" class="logo"><img src="./IMG//Behance-Logo.wine.png"></a>
+        <span class="sign-in">Already on Béhance? <a href="index.php">Log in here</a></span>
+        <p id="error">
             <?php
             if (isset($_GET['error'])) {
                 echo "<strong>" . $_SESSION['error'] . "</strong>";

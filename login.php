@@ -8,7 +8,7 @@ require_once("MyError.php");
 session_start();
 
 /*création d'une variable "controller" 
-correspondant à un objetcontroller*/
+correspondant à un objet Controller*/
 $controller = new Controller($connexion);
 /*création d'une variable "name" corespondant à une valeur string 
 entrée par l'utilisateur dans l'input html "username"utilisant
@@ -39,6 +39,8 @@ la méthode POST*/
 
             $_SESSION['user'] = $user;
             header("Location:index.php");
+            
+
         } else {
 
             $_SESSION['error']->setError(-8, "Identification incorrecte, veuillez réessayer !");

@@ -42,7 +42,7 @@
 
                 if ($pwd1 === $pwd2) {
 
-                    $status = $controler->addUser(strtolower($name), password_hash($pwd1, PASSWORD_ARGON2I)) ;
+                    $status = $controler->addUser(strtolower($name), password_hash($pwd1, PASSWORD_DEFAULT)) ;
 
                     if ($status) {
 

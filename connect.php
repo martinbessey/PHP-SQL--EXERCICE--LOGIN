@@ -5,7 +5,7 @@ try{
     /*création d'une nouvelle variable "connexion" instenciée
 comme nouvel objet de la classe PDO (PHP DATA OBJECT)*/
     $connexion = new PDO(
-        'mysql:host=localhost:3306;dbname=login_data',
+        'mysql:host=localhost:3306;dbname=secureV2',
         'root',
         ''
     );
