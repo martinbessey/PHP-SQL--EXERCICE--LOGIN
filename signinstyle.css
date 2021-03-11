@@ -38,17 +38,16 @@
     width: 15vw;
     height: 8vh;
     padding-left: 2%;
-    padding-top: 2%;
   }
   
   .sign-in{
     position: absolute;
     top: 0;
     right: 0;
-    width: 23vw;
+    width: 30vw;
     height: 8vh;
     padding-right: 2%;
-    padding-top: 2%;
+    padding-top: 4%;
     color:white;
     font-size: 18px;
   }
@@ -56,15 +55,13 @@
   .sign-in a {
     color:white;
   }
-  .sign-in a:hover {
-    color:#b08210;
+
+  .sign-in a:hover{
+    color:#053eff;
   }
   
   main {
-    background-image: url('./login-background.jpg');
-    background-color: #b08210;
-    background-blend-mode: multiply;
-    background-position-y: -100vh;
+    background-image: url('./tumblr_na5ujg8a8G1rlz4gso1_1280_1000.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
@@ -84,7 +81,10 @@
     padding-bottom: 5%;
     margin-bottom:45px;
   }
-  
+  #error{
+    color:rgb(255, 255, 255);
+
+  }
   form {
     justify-content: space-around;
     width: 50%;
@@ -118,17 +118,17 @@
   input[type="submit"]:hover,
   input[type="submit"]:focus{
     background-color: rgb(0, 0, 0);
-    color: #b08210;
-    border: solid 2px #b08210;
+    color: #053eff;
+    border: solid 2px #053eff;
   }
   #password:hover ,
   #username:hover {
-    border: solid 2px #b08210;
+    border: solid 2px #053eff;
   }
   div small,div a {
     font-size:1em;
     padding-top: 2em;
-    color:#b08210;
+    color:#053eff;
   }
   footer {
     height: 10vh;
