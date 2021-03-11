@@ -12,7 +12,7 @@ données héxadécimale*/
 /*si l'ouverture de la session, création d'un nouvel objet 'My Error' 
 renvoyant au fichier MyError.php*/
 if (!isset($_SESSION['error']))//si la valeur de erreur est null
-$_SESSION['error'] = new MyError();
+$_SESSION['error'] = new MyError();//création d'un nouvel objet "MyError"
 
 ?>
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ $_SESSION['error'] = new MyError();
     </p>
             <form method="post" action="login.php" class="flex column ycenter ">                
                 <input type="username" name="username" id="username" placeholder="username..." required>
-                <input type="password" name="password" id="password" placeholder="your password..." required>
+                <input type="password" name="verifpassword" id="password" placeholder="your password..." required>
                 <input type="hidden" value="<?= $_SESSION["token"]?>"  name="token">
                 <input type="submit" placeholder="login" value="Login"> 
             </form>
