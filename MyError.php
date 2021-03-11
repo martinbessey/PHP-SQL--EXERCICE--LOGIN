@@ -2,8 +2,8 @@
     
 /*création d'une classe MyError*/    
     class MyError{
-
-        private $_code;
+    
+        private $_code;    
         private $_message;
         private$_time;
 
