@@ -1,7 +1,8 @@
 <?php
+//Création d'une noubelle classe Controller
 class Controller{
 
-    private $_connexion;
+    private $_connection;
     private $_user;
 
     public function __construct($connection){
@@ -11,25 +12,27 @@ class Controller{
     public function getUser($uname){
 
         try{
-            $sql = "SELECT username, password FROM user WHERE username = LOWER(:name)";
+            $sql = "SELECT username, password FROM user WHERE username = LOWER(:name)";/*LOWER convertit tout les caractèrres 
+                                                                                       d'une chaîne en minuscules
 
             /*Création d'une requête préparée qui permet de se prémunire des injections SQL*/
 
             //preparation de la requete préparée dans le serveur elle ne serat pas encore executée
            
-            $statement = $this ->_connection->prepare($sql);
+            $statement = $this ->_connection->prepare($sql);//"prepare" prépare une requête à l'execution d'un objet
+
        
 
             //injection des paramètres
 
-            $statement->bindParam("name", $uname);
-       
+            $statement->bindParam("name", $uname);//"bindParam" lie le paramètre "name au nom de variable $uname
+                     
             //execute la requete
-            $statement-> execute ();
+            $statement-> execute ();//"execute" execute la rquête préparée $statement
        
             //on récupère l'utilisateur en base de donnée
 
-            $this->_user = $statement->fetch();
+            $this->_user = $statement->fetch();//"fetch" récupère la ligne suivante d'un jeu de résultat PDO
 
             return $this->_user;
         }
